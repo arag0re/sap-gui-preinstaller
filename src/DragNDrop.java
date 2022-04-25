@@ -93,7 +93,7 @@ public class DragNDrop {
 	}
 	
 	public static void executeBashScript(String arch, String url, String path, String OS) {
-		String[] cmd = new String[]{"/bin/sh", "/Users/antonstadie/Developer/EclipseWorkspace/SAP-GUI-PreInstaller/src/"+ OS + "/"+arch+".sh", url, path};
+		String[] cmd = new String[]{"/bin/sh", "/Users/antonstadie/Developer/EclipseWorkspace/SAP-GUI-PreInstaller/src/"+ OS + "/"+arch+".sh", url ,path};
     	try {
 			Process pr = Runtime.getRuntime().exec(cmd);
 			BufferedReader stdInput = new BufferedReader(new 
